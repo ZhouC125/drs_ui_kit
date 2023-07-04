@@ -7,5 +7,7 @@ export 'styles/drs_colors.dart';
 export 'utils/context_extensions.dart';
 export 'component/toast/drs_toast.dart';
 export 'styles/styles.dart';
+export 'component/divider/drs_divider.dart';
+export 'component/dialog/drs_dialog.dart';
 
 AppStyle get $styles => AppStyle();
