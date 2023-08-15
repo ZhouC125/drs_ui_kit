@@ -188,6 +188,7 @@ class DrsToast {
     _overlayEntry?.remove();
     _overlayEntry = null;
     _showing = false;
+    _progressKey = null;
   }
 
   static void _startTimer(Duration duration) {
@@ -281,7 +282,7 @@ class _DrsToastLoading extends StatelessWidget {
               lineWidth: 4,
             ),
             const SizedBox(
-              height: 10,
+              height: 12,
             ),
             Text(text ?? '加载中...')
           ],
@@ -331,7 +332,6 @@ class _DrsIconTextToast extends StatelessWidget {
     return ConstrainedBox(
         constraints: const BoxConstraints(maxWidth: 136, maxHeight: 130),
         child: Container(
-            height: 110,
             padding: const EdgeInsets.all(24),
             decoration: BoxDecoration(
               color: bgBlackColor,
@@ -347,7 +347,7 @@ class _DrsIconTextToast extends StatelessWidget {
                   color: Colors.white,
                 ),
                 const SizedBox(
-                  height: 8,
+                  height: 10,
                 ),
                 Text(
                   text ?? '',
