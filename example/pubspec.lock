@@ -56,15 +56,6 @@ packages:
       relative: true
     source: path
     version: "0.0.1"
-  easy_data_loading:
-    dependency: transitive
-    description:
-      path: "."
-      ref: HEAD
-      resolved-ref: "7ca7a6f92ce2d268176d1fb82c395e317ebbd8bf"
-      url: "https://gitee.com/goan/easy_data_loading.git"
-    source: git
-    version: "0.0.1"
   fake_async:
     dependency: transitive
     description:
