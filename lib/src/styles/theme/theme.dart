@@ -1,5 +1,5 @@
 
-import 'package:drs_ui_kit/styles/drs_colors.dart';
+import 'package:drs_ui_kit/src/styles/drs_colors.dart';
 import 'package:flutter/material.dart';
 
 /// @description : 主题数据

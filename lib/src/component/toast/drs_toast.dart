@@ -1,9 +1,9 @@
 import 'dart:async';
 import 'dart:math';
-import 'package:drs_ui_kit/component/loading/drs_circle_indicator.dart';
-import 'package:drs_ui_kit/component/progress/progress.dart';
+import 'package:drs_ui_kit/drs_ui_kit.dart';
+import 'package:drs_ui_kit/src/component/loading/drs_circle_indicator.dart';
+import 'package:drs_ui_kit/src/component/progress/progress.dart';
 import 'package:flutter/material.dart';
-import '../../drs_ui_kit.dart';
 
 /// @description : 通用Toast提示,用于轻量级反馈或提示，
 /// @class : drs_toast

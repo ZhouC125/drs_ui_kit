@@ -1,7 +1,7 @@
 import 'dart:math';
 import 'dart:ui' as ui show TextHeightBehavior;
 
-import 'package:drs_ui_kit/utils/platform/universal_platform.dart';
+import 'package:drs_ui_kit/src/utils/platform/universal_platform.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';

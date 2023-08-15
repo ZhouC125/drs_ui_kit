@@ -5,7 +5,6 @@
  */
 
 import 'package:drs_ui_kit/drs_ui_kit.dart';
-import 'package:drs_ui_kit/styles/drs_colors.dart';
 import 'package:flutter/material.dart';
 
 /// DrsDialog手脚架
