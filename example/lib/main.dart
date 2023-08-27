@@ -200,6 +200,63 @@ class _AppState extends State<App> {
         ],
       );
 
+
+  Widget dialog(BuildContext context) => buildItem(
+    context,
+    'dialog对话框',
+    [
+      _textBtn('普通提示', () {
+        showGeneralDialog(
+          context: context,
+          pageBuilder: (BuildContext buildContext, Animation<double> animation,
+              Animation<double> secondaryAnimation) {
+            return  DrsAlertDialog(title: '对话框提示',content: '内容',);
+          },
+        );
+
+      }),
+    ],
+  );
+
+  Widget  button(BuildContext context) => buildItem(
+    context,
+    'button按钮',
+    [
+      CommonButton.big(
+        text: '确定按钮',
+        onPressed: () => debugPrint('666'),
+        margin: EdgeInsets.all(10),
+      ),
+      CommonButton.big(
+        text: '不可用的确定按钮',
+        onPressed: () => debugPrint('777'),
+        enabled: false,
+        margin: EdgeInsets.all(10),
+      ),
+      SizedBox(height: 10),
+      Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          CommonButton.small(
+            text: '小按钮',
+            onPressed: () => debugPrint('666'),
+          ),
+          CommonButton.small(
+            text: '小按钮',
+            onPressed: () => debugPrint('666'),
+            filled: false,
+          ),
+          CommonButton.small(
+            text: '小按钮',
+            onPressed: () => debugPrint('666'),
+            filled: false,
+            isBorderThemeColor: false,
+          ),
+        ],
+      ),
+    ],
+  );
+
   Widget _textBtn(String text, VoidCallback onTap) {
     return TextButton(onPressed: onTap, child: Text(text));
   }
@@ -214,6 +271,8 @@ class _AppState extends State<App> {
         children: <Widget>[
           actionSheet(context),
           divider(context),
+          dialog(context),
+          button(context),
         ].expand((e) => [e, const DrsDivider()]).toList(),
       ),
     );
